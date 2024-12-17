@@ -1,0 +1,21 @@
+{
+  "areas": [
+    {
+      "areaName": "edge2",
+      "host": "192.168.64.19",
+      "geoCoordinates": {
+        "latitude": 45.4642,
+        "longitude": 9.1900
+      },
+      "tags": {
+        "tag": "ec2-instance"
+      },
+      "resources": {
+        "cpu": 15,
+        "io": 15
+      },
+      "areas": [
+  ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+---
+- name: Install and configure faasd and Redis
+  hosts: "{{ target_hosts }}"
+  tasks:
+    - name: Install prerequisites for faasd
+      apt:
+        name:
+          - curl
+          - git
+          - runc
+          - sudo
+        update_cache: yes
+
+    - name: Clone faasd repository
+      git:
+        repo: "https://github.com/openfaas/faasd"
+        dest: /var/lib/faasd
+        version: "master"
+        depth: 1
+      register: git_result
+
+    - name: Run faasd installation script
+      shell: ./hack/install.sh
+      args:
+        chdir: /var/lib/faasd
+      when: git_result.changed
+
+    - name: Ensure faasd is running
+      systemd:
+        name: faasd
+        state: started
+        enabled: yes
+
+    - name: Pull Redis image using ctr
+      shell: ctr image pull docker.io/ariannadragoniii/arm-redis:latest
+
+    - name: Run Redis container
+      shell: ctr run -d --net-host docker.io/ariannadragoniii/arm-redis:latest redis
+      args:
+        creates: /var/run/redis.pid
+    
+    - name: Autorize Faasd Access
+      shell:
+        sudo cat /var/lib/faasd/secrets/basic-auth-password | faas-cli login --username admin --password-stdin --gateway http://127.0.0.1:8080/
+
+    - name: Copy customized templates to the target machine
+      copy:
+        src: ./templates/template
+        dest: /var/lib/faasd/functions/
+    
+    - name: Copy function files to the target machine
+      copy:
+        src: ./functions/
+        dest: /var/lib/faasd/functions/
+
+# # Access to docker ariannadragoniii (?)
+    - name: Build and deploy function with faas-cli
+      shell: |
+        cd /var/lib/faasd/functions/
+        faas-cli build -f stack.yml
+        faas-cli deploy -f stack.yml --env "ERMES_NODE={{ target_node }}"
+
+    # - name: Build and deploy function with faas-cli
+    #   shell: |
+    #     cd /var/lib/faasd/functions/
+    #     faas-cli build -f stack.yml >> /var/log/faas-cli.log 2>&1
+    #     faas-cli deploy -f stack.yml --env "ERMES_NODE={{ target_node }}" >> /var/log/faas-cli.log 2>&1

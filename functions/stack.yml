@@ -11,10 +11,9 @@ functions:
     lang: ermes-go-redis
     handler: ./api
     image: ariannadragoniii/api:latest
-  speech-to-text:
-    lang: ermes-go-redis
+  s-to-t:
+    lang: speech-to-text
     handler: ./speech-to-text
     image: ariannadragoniii/speech-to-text:latest
 
-  
   

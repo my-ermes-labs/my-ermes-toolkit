@@ -1,6 +1,7 @@
 
 
 VM edge2
+- SSH: `ssh edge2@192.168.64.19`
 - IP: `192.168.64.19`
 - faasd secret: `LCb3izGF6sznAbdH99JPHDMDdwpSNFxGmnQXjmRS8Bdq8aohVUk2sLl9Xhg63ab`
 - faasd gateway: `10.62.0.5`

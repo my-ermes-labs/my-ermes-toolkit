@@ -15,5 +15,10 @@ functions:
     lang: speech-to-text
     handler: ./speech-to-text
     image: ariannadragoniii/speech-to-text:latest
+  cdn-upload:
+    lang: cdn-upload
+    handler: ./cdn-upload
+    image: ariannadragoniii/cdn-upload:latest
 
   
+

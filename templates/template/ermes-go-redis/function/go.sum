@@ -42,6 +42,8 @@ github.com/my-ermes-labs/api-go v0.2.14 h1:QTKkMO8frrJWkOsUA8Zi3M7ZNJZ548FzLz1rZ
 github.com/my-ermes-labs/api-go v0.2.14/go.mod h1:7xicJw2ZI5JweSzzMh0Bb8gEYhXAqLgYzwD/4469CLM=
 github.com/my-ermes-labs/api-go v0.2.15 h1:WvQTYfAgA3iksgTTirvbTzu2CvPvucnQpqcfjXM+x1M=
 github.com/my-ermes-labs/api-go v0.2.15/go.mod h1:7xicJw2ZI5JweSzzMh0Bb8gEYhXAqLgYzwD/4469CLM=
+github.com/my-ermes-labs/log v1.2.0 h1:J6dpfetulXZ6oTbVeixVpn54HAPXeSxly1fQQz+GxaM=
+github.com/my-ermes-labs/log v1.2.0/go.mod h1:9WvSr0abccmqV1FlJhFdwRcMn0btfTv7/7mhESkDw6Y=
 github.com/my-ermes-labs/storage-redis/packages/go v0.2.2 h1:PCjTQfvYiozPs7kyLPV+mrbHLgLo+Nip4E/N+nf+CAM=
 github.com/my-ermes-labs/storage-redis/packages/go v0.2.2/go.mod h1:8Pjs3GN/tZQSLjsmFlT3yvUesFakfCW36axhLpTa+Nc=
 github.com/my-ermes-labs/storage-redis/packages/go v0.2.4 h1:mT9ZqbdLeTbTxR1w0qRM23C5WzwsawaSRJdThlL3OGM=

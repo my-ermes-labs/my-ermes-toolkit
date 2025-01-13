@@ -1,15 +1,13 @@
 package function
 
 import (
-	"bytes"
-	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 
 	"time"
 
 	handle "github.com/my-ermes-labs/api-go/http"
+	log "github.com/my-ermes-labs/log"
 
 	"github.com/my-ermes-labs/api-go/api"
 	rc "github.com/my-ermes-labs/storage-redis/packages/go"
@@ -63,7 +61,7 @@ func Handle(w http.ResponseWriter, r *http.Request) {
 	// Create options dynamically...
 	// Do something...
 	// Finally, Call the handler...
-	myLog("Hello from the API handler!")
+	log.MyLog("Hello from the API handler!")
 	handle.Handle(Node, w, r, options, cdn_upload)
 }
 
@@ -104,30 +102,3 @@ var options = handle.NewHandlerOptionsBuilder().
 	}).
 	// Set the session token cookie name.
 	Build()
-
-func myLog(bodyContent string) (string, error) {
-	url := "http://192.168.64.1:3000/handlerGo"
-
-	requestBody := bytes.NewBufferString(bodyContent)
-
-	req, err := http.NewRequest("POST", url, requestBody)
-	if err != nil {
-		return "", fmt.Errorf("error while creating the request: %v", err)
-	}
-
-	req.Header.Set("Content-Type", "text/plain")
-
-	client := &http.Client{}
-	resp, err := client.Do(req)
-	if err != nil {
-		return "", fmt.Errorf("error while sending the request: %v", err)
-	}
-	defer resp.Body.Close()
-
-	responseBody, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return "", fmt.Errorf("error while reading the response: %v", err)
-	}
-
-	return string(responseBody), nil
-}

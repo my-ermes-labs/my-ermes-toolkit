@@ -8,6 +8,7 @@ import (
 
 	"github.com/my-ermes-labs/api-go/api"
 	"github.com/my-ermes-labs/api-go/infrastructure"
+	log "github.com/my-ermes-labs/log"
 	rc "github.com/my-ermes-labs/storage-redis/packages/go"
 	"github.com/redis/go-redis/v9"
 )
@@ -19,8 +20,8 @@ var node *api.Node
 var redisClient *redis.Client
 
 func init() {
-	myLog("\n\node in api\n\n")
-	myLog("initializing API")
+	log.MyLog("\n\node in api\n\n")
+	log.MyLog("initializing API")
 	// Get the node from the environment variable.
 	encodedJsonNode := os.Getenv("ERMES_NODE")
 
@@ -37,16 +38,16 @@ func init() {
 		panic(err)
 	}
 
-	myLog(fmt.Sprintf("NODE ==> Area name = %s Host = %s ", infraNode.AreaName, infraNode.Host))
+	log.MyLog(fmt.Sprintf("NODE ==> Area name = %s Host = %s ", infraNode.AreaName, infraNode.Host))
 
 	// Get the Redis connection details from the environment variables.
 	redisHost := envOrDefault("REDIS_HOST", "10.62.0.1")
 	redisPort := envOrDefault("REDIS_PORT", "6379")
 	redisPassword := envOrDefault("REDIS_PASSWORD", "")
 
-	myLog(fmt.Sprintf("REDIS_HOST = %s", redisHost))
-	myLog(fmt.Sprintf("REDIS_PORT = %s", redisPort))
-	myLog(fmt.Sprintf("REDIS_PW = %s", redisPassword))
+	log.MyLog(fmt.Sprintf("REDIS_HOST = %s", redisHost))
+	log.MyLog(fmt.Sprintf("REDIS_PORT = %s", redisPort))
+	log.MyLog(fmt.Sprintf("REDIS_PW = %s", redisPassword))
 
 	// Create a new Redis client.
 	redisClient = redis.NewClient(&redis.Options{
@@ -56,10 +57,10 @@ func init() {
 	})
 
 	if err := checkRedisConnection(redisClient); err != nil {
-		myLog(fmt.Sprintf("Errore nella connessione a Redis: %v", err))
+		log.MyLog(fmt.Sprintf("Errore nella connessione a Redis: %v", err))
 		fmt.Println("Errore nella connessione a Redis:", err)
 	} else {
-		myLog("Connessione a Redis riuscita!")
+		log.MyLog("Connessione a Redis riuscita!")
 		fmt.Println("Connessione a Redis riuscita!")
 	}
 

@@ -1,2 +1,4 @@
+github.com/my-ermes-labs/log v1.2.0 h1:J6dpfetulXZ6oTbVeixVpn54HAPXeSxly1fQQz+GxaM=
+github.com/my-ermes-labs/log v1.2.0/go.mod h1:9WvSr0abccmqV1FlJhFdwRcMn0btfTv7/7mhESkDw6Y=
 github.com/sashabaranov/go-openai v1.36.1 h1:EVfRXwIlW2rUzpx6vR+aeIKCK/xylSrVYAx1TMTSX3g=
 github.com/sashabaranov/go-openai v1.36.1/go.mod h1:lj5b/K+zjTSFxVLijLSTDZuP7adOgerWeFyZLUhAKRg=

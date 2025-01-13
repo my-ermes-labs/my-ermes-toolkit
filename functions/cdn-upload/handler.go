@@ -21,6 +21,7 @@ func cdn_upload(
 	sessionToken api.SessionToken,
 ) (err error) {
 	// Read the file name from the request query parameters.
+
 	filename := r.URL.Query().Get("filename")
 	if filename == "" {
 		http.Error(w, "Missing 'filename' parameter", http.StatusBadRequest)

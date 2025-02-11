@@ -23,6 +23,10 @@ functions:
     lang: cdn-download
     handler: ./cdn-download
     image: ariannadragoniii/cdn-download:latest
+  migrate:
+    lang: migrate
+    handler: ./migrate
+    image: ariannadragoniii/migrate:latest
 
   
 

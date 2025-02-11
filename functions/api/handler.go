@@ -8,19 +8,15 @@ import (
 
 	"github.com/my-ermes-labs/api-go/api"
 
-	// "fmt"
-
 	handle "github.com/my-ermes-labs/api-go/http"
 
 	rc "github.com/my-ermes-labs/storage-redis/packages/go"
 	"github.com/redis/go-redis/v9"
 )
 
-// "github.com/redis/go-redis/v9"
-
 // Request handler.
 func Handler(w http.ResponseWriter, r *http.Request, sessionToken api.SessionToken) error {
-	myLog("\n\nHandler in api\n\n")
+	//myLog("\n\nHandler in api\n\n")
 	// Create the keyspace.
 	ks := rc.NewErmesKeySpaces(sessionToken.SessionId)
 

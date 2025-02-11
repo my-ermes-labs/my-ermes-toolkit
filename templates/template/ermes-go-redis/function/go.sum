@@ -42,8 +42,12 @@ github.com/my-ermes-labs/api-go v0.2.14 h1:QTKkMO8frrJWkOsUA8Zi3M7ZNJZ548FzLz1rZ
 github.com/my-ermes-labs/api-go v0.2.14/go.mod h1:7xicJw2ZI5JweSzzMh0Bb8gEYhXAqLgYzwD/4469CLM=
 github.com/my-ermes-labs/api-go v0.2.15 h1:WvQTYfAgA3iksgTTirvbTzu2CvPvucnQpqcfjXM+x1M=
 github.com/my-ermes-labs/api-go v0.2.15/go.mod h1:7xicJw2ZI5JweSzzMh0Bb8gEYhXAqLgYzwD/4469CLM=
+github.com/my-ermes-labs/api-go v0.2.16 h1:rMWga/+sBDM+Enlw5NIqMw4T+ZMzjBQSbtjgQGlNwG8=
+github.com/my-ermes-labs/api-go v0.2.16/go.mod h1:+He+DmGJk51/wbdMzv8QYd/RIDEEXeTupc2Rnhzkroc=
 github.com/my-ermes-labs/log v1.2.0 h1:J6dpfetulXZ6oTbVeixVpn54HAPXeSxly1fQQz+GxaM=
 github.com/my-ermes-labs/log v1.2.0/go.mod h1:9WvSr0abccmqV1FlJhFdwRcMn0btfTv7/7mhESkDw6Y=
+github.com/my-ermes-labs/log v1.3.1 h1:GDna2/l4Zskot/c1Q6LgefBAXQazkKU5vchm1RdcyXo=
+github.com/my-ermes-labs/log v1.3.1/go.mod h1:9WvSr0abccmqV1FlJhFdwRcMn0btfTv7/7mhESkDw6Y=
 github.com/my-ermes-labs/storage-redis/packages/go v0.2.2 h1:PCjTQfvYiozPs7kyLPV+mrbHLgLo+Nip4E/N+nf+CAM=
 github.com/my-ermes-labs/storage-redis/packages/go v0.2.2/go.mod h1:8Pjs3GN/tZQSLjsmFlT3yvUesFakfCW36axhLpTa+Nc=
 github.com/my-ermes-labs/storage-redis/packages/go v0.2.4 h1:mT9ZqbdLeTbTxR1w0qRM23C5WzwsawaSRJdThlL3OGM=
@@ -92,6 +96,10 @@ github.com/my-ermes-labs/storage-redis/packages/go v0.2.27 h1:kF0M2OC+MdkJz8JKEG
 github.com/my-ermes-labs/storage-redis/packages/go v0.2.27/go.mod h1:Cy93X9lFnDz6iHG5wU4vXVY4TSEvj4xjA1G+SsPKbGI=
 github.com/my-ermes-labs/storage-redis/packages/go v0.2.28 h1:Bez8doH+ND7v7TxgJ1DG43p5kw0CxQG4mHUUqTK9NAU=
 github.com/my-ermes-labs/storage-redis/packages/go v0.2.28/go.mod h1:Cy93X9lFnDz6iHG5wU4vXVY4TSEvj4xjA1G+SsPKbGI=
+github.com/my-ermes-labs/storage-redis/packages/go v1.3.1 h1:hm8z6sHVCAQtbu7juz+uTV/H8E4qYcnxxjhG+Lu/SII=
+github.com/my-ermes-labs/storage-redis/packages/go v1.3.1/go.mod h1:HYRRJmc/3fjaUP4mqa/lqJ1GHPzbBeztAhC4Kw6IW8I=
+github.com/my-ermes-labs/storage-redis/packages/go v1.3.2 h1:+Sk05zHZk5dSWvekjGUCu6zpMaF/eiyAcHWShPx+A8Y=
+github.com/my-ermes-labs/storage-redis/packages/go v1.3.2/go.mod h1:6NVhijP8G09bDTKAwst3THM+ZTMqjbQ8BW5FU8bPkSY=
 github.com/redis/go-redis/v9 v9.5.1 h1:H1X4D3yHPaYrkL5X06Wh6xNVM/pX0Ft4RV0vMGvLBh8=
 github.com/redis/go-redis/v9 v9.5.1/go.mod h1:hdY0cQFCN4fnSYT6TkisLufl/4W5UIXyv0b/CLO2V2M=
 github.com/redis/go-redis/v9 v9.7.0 h1:HhLSs+B6O021gwzl+locl0zEDnyNkxMtf/Z3NNBMa9E=

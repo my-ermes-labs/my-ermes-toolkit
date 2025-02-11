@@ -57,6 +57,7 @@ func Handle(w http.ResponseWriter, r *http.Request) {
 	// Do something...
 	// Finally, Call the handler...
 	fmt.Fprintln(w, "Hello from the API handler!")
+	log.MyLog("Hello from the API handler!")
 	handle.Handle(node, w, r, options, Handler)
 }
 

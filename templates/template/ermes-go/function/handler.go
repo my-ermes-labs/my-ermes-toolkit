@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/ermes-labs/api-go/infrastructure"
+	"github.com/my-ermes-labs/api-go/infrastructure"
 )
 
 func Handle(w http.ResponseWriter, r *http.Request) {

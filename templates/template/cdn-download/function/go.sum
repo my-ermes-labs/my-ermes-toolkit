@@ -8,10 +8,10 @@ github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f h1:lO4WD4F/r
 github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f/go.mod h1:cuUVRXasLTGF7a8hSLbxyZXjz+1KgoB3wDUb6vlszIc=
 github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
 github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
-github.com/my-ermes-labs/api-go v0.2.15 h1:WvQTYfAgA3iksgTTirvbTzu2CvPvucnQpqcfjXM+x1M=
-github.com/my-ermes-labs/api-go v0.2.15/go.mod h1:7xicJw2ZI5JweSzzMh0Bb8gEYhXAqLgYzwD/4469CLM=
-github.com/my-ermes-labs/log v1.2.0 h1:J6dpfetulXZ6oTbVeixVpn54HAPXeSxly1fQQz+GxaM=
-github.com/my-ermes-labs/log v1.2.0/go.mod h1:9WvSr0abccmqV1FlJhFdwRcMn0btfTv7/7mhESkDw6Y=
+github.com/my-ermes-labs/api-go v0.2.16 h1:rMWga/+sBDM+Enlw5NIqMw4T+ZMzjBQSbtjgQGlNwG8=
+github.com/my-ermes-labs/api-go v0.2.16/go.mod h1:+He+DmGJk51/wbdMzv8QYd/RIDEEXeTupc2Rnhzkroc=
+github.com/my-ermes-labs/log v1.3.1 h1:GDna2/l4Zskot/c1Q6LgefBAXQazkKU5vchm1RdcyXo=
+github.com/my-ermes-labs/log v1.3.1/go.mod h1:9WvSr0abccmqV1FlJhFdwRcMn0btfTv7/7mhESkDw6Y=
 github.com/my-ermes-labs/storage-redis/packages/go v0.2.28 h1:Bez8doH+ND7v7TxgJ1DG43p5kw0CxQG4mHUUqTK9NAU=
 github.com/my-ermes-labs/storage-redis/packages/go v0.2.28/go.mod h1:Cy93X9lFnDz6iHG5wU4vXVY4TSEvj4xjA1G+SsPKbGI=
 github.com/redis/go-redis/v9 v9.7.0 h1:HhLSs+B6O021gwzl+locl0zEDnyNkxMtf/Z3NNBMa9E=

@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ermes-labs/api-go/infrastructure"
+	"github.com/my-ermes-labs/api-go/infrastructure"
 )
 
 func init() {
